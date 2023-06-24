@@ -19,3 +19,10 @@ select Salary from employee_payroll where name='Karan';
 select * from employee_payroll where startDate between cast('2020-02-20' as date) and getdate();
 
 
+-- Alter and Update [for UC-6]
+select * from employee_payroll;
+alter table employee_payroll add Gender char(1);
+update employee_payroll set Gender='M';
+
+
+
